@@ -1,5 +1,5 @@
 # Protobuf-Dreamer
-A tiled DeepDream project for creating any size of image, on both CPU and GPU. Tensorflow should be compiled for either the CPU, or GPU depending on what your prefer. The CPU is slower, but this project should allow anyone to create an image of any size. 
+A tiled DeepDream project for creating any size of image, on both CPU and GPU. Tensorflow should be compiled for either the CPU, or GPU depending on what your prefer. The CPU is slower, but this project should allow anyone to create an image of any size. The tiling code is based on [jnordberg](https://github.com/jnordberg)'s [DreamCanvas](https://github.com/jnordberg/dreamcanvas) project.
 
 In order to control the desired output size, resize your image prior to running `pb_dreamer.py`. Any "blurriness" caused by resizing a smaller image to a larger size, should disappear after the DeepDream process. 
 
