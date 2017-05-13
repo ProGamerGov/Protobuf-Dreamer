@@ -61,3 +61,10 @@ python pb_dreamer.py --input_image input.png --output_image output.png --octaves
 
 
 
+![](https://raw.githubusercontent.com/ProGamerGov/Protobuf-Dreamer/master/examples/inception5h/mixed5c_pool_reduce_61.jpg)
+
+* `--model inception5h.pb`
+* `--layer mixed5c_pool_reduce` 
+* `--channel 61`
+
+
