@@ -20,6 +20,8 @@ In order to control the desired output size, resize your image prior to running 
 
 Run the following to download and setup the default model:
 
+`git clone https://github.com/ProGamerGov/Protobuf-Dreamer`
+
 `cd Protobuf-Dreamer` 
 
 `wget https://storage.googleapis.com/download.tensorflow.org/models/inception5h.zip`
