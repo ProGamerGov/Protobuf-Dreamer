@@ -73,3 +73,9 @@ python pb_dreamer.py --input_image input.png --output_image output.png --octaves
 * `--channel 61`
 
 
+<img src="https://raw.githubusercontent.com/ProGamerGov/Protobuf-Dreamer/master/examples/inception5h/mixed4d_3x3_bottleneck_pre_relu_139.jpg" width="720" height="720">
+
+* `--model inception5h.pb`
+* `--layer mixed4d_3x3_bottleneck_pre_relu` 
+* `--channel 139`
+
