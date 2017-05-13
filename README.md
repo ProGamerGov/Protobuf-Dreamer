@@ -30,6 +30,8 @@ Run the following to download and setup the default model:
 
 `unzip -d model inception5h.zip`
 
+For a full list of layers, see [here](https://github.com/ProGamerGov/Protobuf-Dreamer/blob/master/examples/inception5h/model_info.txt).
+
 ### Usage: 
 
 Basic usage: 
