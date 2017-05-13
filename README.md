@@ -52,7 +52,12 @@ python pb_dreamer.py --input_image input.png --output_image output.png --octaves
 
 * `--iter`: The number of iterations. Ex: `10`.
 
-* `--Octaves`: The number of octaves. Ex: `4`.
+* `--octaves`: The number of octaves. Ex: `4`.
 
 * `--model`: Path to the `.pb` model file. Default is `tensorflow_inception_graph.pb`.
+
+
+### Examples:
+
+
 
