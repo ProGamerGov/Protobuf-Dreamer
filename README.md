@@ -14,7 +14,9 @@ In order to control the desired output size, resize your image prior to running 
 
 `sudo pip install scipy`
 
-`sudo pip install tensorflow` or `sudo pip install tensorflow-gpu`. Refer to the Tensorflow installation and setup guide for more info: https://www.tensorflow.org/install/install_linux
+`sudo pip install tensorflow` or `sudo pip install tensorflow-gpu`
+
+Refer to the Tensorflow installation and setup guide for more info: https://www.tensorflow.org/install/
 
 ### Setup:
 
