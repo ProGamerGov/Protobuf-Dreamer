@@ -83,3 +83,10 @@ python pb_dreamer.py --input_image input.png --output_image output.png --octaves
 * `--layer mixed4d_3x3_bottleneck_pre_relu` 
 * `--channel 139`
 
+<img src="https://raw.githubusercontent.com/ProGamerGov/Protobuf-Dreamer/master/examples/inception5h/mixed3a_pool_reduce_13.jpg" width="720" height="720">
+
+* `--model inception5h.pb`
+* `--layer mixed3a_pool_reduce` 
+* `--channel 13`
+
+
