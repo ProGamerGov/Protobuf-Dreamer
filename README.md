@@ -65,9 +65,16 @@ python pb_dreamer.py --input_image input.png --output_image output.png --octaves
 * `--model`: Path to the `.pb` model file. Default is `tensorflow_inception_graph.pb`.
 
 
+### Channels: 
+
+Using the `--channel` parameter, you can use hundreds of additional "mini layers" inside each main layer: 
+
+Example: 
+
+* All 64 channels from the `mixed4c_pool_reduce` layer: https://i.imgur.com/gIJSF17.jpg
+
+
 ### Examples:
-
-
 
 
 <img src="https://raw.githubusercontent.com/ProGamerGov/Protobuf-Dreamer/master/examples/inception5h/mixed5c_pool_reduce_61.jpg" width="720" height="720">
@@ -75,7 +82,6 @@ python pb_dreamer.py --input_image input.png --output_image output.png --octaves
 * `--model inception5h.pb`
 * `--layer mixed4c_pool_reduce` 
 * `--channel 61`
-
 
 <img src="https://raw.githubusercontent.com/ProGamerGov/Protobuf-Dreamer/master/examples/inception5h/mixed4d_3x3_bottleneck_pre_relu_139.jpg" width="720" height="720">
 
