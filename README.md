@@ -71,7 +71,7 @@ Using the `--channel` parameter, you can use hundreds of additional "mini layers
 
 Example: 
 
-* All 64 channels from the `mixed4c_pool_reduce` layer: https://i.imgur.com/gIJSF17.jpg
+* All 64 channels (00-63) from the `mixed4c_pool_reduce` layer: https://i.imgur.com/gIJSF17.jpg
 
 
 ### Examples:
