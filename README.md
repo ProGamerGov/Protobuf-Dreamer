@@ -69,9 +69,11 @@ python pb_dreamer.py --input_image input.png --output_image output.png --octaves
 
 Using the `--channel` parameter, you can use hundreds of additional "mini layers" inside each main layer: 
 
-Example: 
+Examples: 
 
-* All 64 channels (00-63) from the `mixed4c_pool_reduce` layer: https://i.imgur.com/gIJSF17.jpg
+* 64 channels (00-63) from the `mixed4c_pool_reduce` layer: https://i.imgur.com/gIJSF17.jpg
+
+* 96 channels (00-95) from the `mixed4a_3x3_bottleneck_pre_relu` layer: https://i.imgur.com/Oglnt4p.jpg
 
 
 ### Examples:
