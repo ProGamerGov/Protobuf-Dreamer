@@ -25,7 +25,7 @@ parser.add_argument('--iter', default='10', help="The number of iterations", typ
 parser.add_argument('--octaves', default='4', help="The number of octaves.", type=int)
 parser.add_argument('--tile_size', default='512', help="The size of your tiles.", type=int)
 parser.add_argument('--model', default='/home/ubuntu/Protobuf-Dreamer/model/tensorflow_inception_graph.pb', help="Path to your .pb model file.", type=str)
-parser.add_argument('--seed', default='', help="The initialization seed used to reproduce results.", type=int)
+parser.add_argument('--seed', default='-1', help="The initialization seed used to reproduce results.", type=int)
 parser.parse_args()
 args = parser.parse_args()
 input_img = args.input_image
@@ -39,7 +39,7 @@ model_path = args.model
 seed = args.seed
 input_img = spi.imread(input_img, mode="RGB")
 
-if seed.isdigit then
+if seed != -1: 
   tf.set_random_seed(seed)
 
 model_fn = os.path.join(os.path.dirname(os.path.realpath(__file__)), model_path)
