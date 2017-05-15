@@ -83,6 +83,8 @@ The most interesting layers and channels that I have come across, are [listed he
 
 A list of all the potential things you can find in the layer channels of the inception5h model, can be [found here](https://github.com/ProGamerGov/Protobuf-Dreamer/blob/master/examples/inception5h/imagenet_comp_graph_label_strings.txt).
 
+All the channel examples were rendered at 640x640 reslution, and used this image as the input image: https://i.imgur.com/E0llxPR.png
+
 ### Examples:
 
 
