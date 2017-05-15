@@ -8,7 +8,7 @@ In order to control the desired output size, resize your image prior to running 
 
 `sudo apt-get install python-skimage`
 
-`sudo pip install python-pip`
+`sudo apt-get install python-pip`
 
 `sudo pip install numpy`
 
