@@ -79,7 +79,7 @@ Examples:
 
 * 101 channels (100-200) from the `mixed5a_1x1` layer: https://i.imgur.com/icJjqm9.jpg
 
-The most interesting layers and channels that I have come across, are listed here: https://github.com/ProGamerGov/Protobuf-Dreamer/wiki/Notable-Channels
+The most interesting layers and channels that I have come across, are listed here: https://github.com/ProGamerGov/Protobuf-Dreamer/wiki/Interesting-Layers-And-Channels
 
 ### Examples:
 
