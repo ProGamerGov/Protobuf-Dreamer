@@ -24,7 +24,7 @@ parser.add_argument('--layer', default='mixed4d_3x3_bottleneck_pre_relu', help="
 parser.add_argument('--iter', default='10', help="The number of iterations", type=int)
 parser.add_argument('--octaves', default='4', help="The number of octaves.", type=int)
 parser.add_argument('--tile_size', default='512', help="The size of your tiles.", type=int)
-parser.add_argument('--model', default='/home/ubuntu/DeepDream/model/tensorflow_inception_graph.pb', help="Path to your .pb model file.", type=str)
+parser.add_argument('--model', default='/home/ubuntu/Protobuf-Dreamer/model/tensorflow_inception_graph.pb', help="Path to your .pb model file.", type=str)
 parser.parse_args()
 args = parser.parse_args()
 input_img = args.input_image
