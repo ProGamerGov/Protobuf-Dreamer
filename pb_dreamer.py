@@ -36,6 +36,7 @@ iter_value = args.iter
 octave_value = args.octaves
 tile_size = args.tile_size
 model_path = args.model
+seed = args.seed
 input_img = spi.imread(input_img, mode="RGB")
 
 model_fn = os.path.join(os.path.dirname(os.path.realpath(__file__)), model_path)
