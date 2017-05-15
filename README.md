@@ -43,7 +43,7 @@ python pb_dreamer.py --input_image input.png
 Advanced usage: 
 
 ```
-python pb_dreamer.py --input_image input.png --output_image output.png --octaves 4 --layer mixed4d_3x3_bottleneck_pre_relu --channel 139 --iter 10 --tile_size 512 --model /home/ubuntu/DeepDream/model/tensorflow_inception_graph.pb
+python pb_dreamer.py --input_image input.png --output_image output.png --octaves 4 --layer mixed4d_3x3_bottleneck_pre_relu --channel 139 --iter 10 --tile_size 512 --model /home/ubuntu/Protobuf-Dreamer/model/tensorflow_inception_graph.pb
 ```
 
 ### Parameters: 
