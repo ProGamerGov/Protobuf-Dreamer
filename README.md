@@ -75,6 +75,7 @@ Examples:
 
 * 96 channels (00-95) from the `mixed4a_3x3_bottleneck_pre_relu` layer: https://i.imgur.com/Oglnt4p.jpg
 
+* 100 channels (00-99) from the `mixed5a_1x1` layer: https://i.imgur.com/64BKrJt.jpg
 
 ### Examples:
 
