@@ -64,6 +64,8 @@ python pb_dreamer.py --input_image input.png --output_image output.png --octaves
 
 * `--model`: Path to the `.pb` model file. Default is `tensorflow_inception_graph.pb`.
 
+* `--print_model`:  If this flag is present, all the inputs and layers of the model will be printed to the terminal.
+
 
 ### Channels: 
 
