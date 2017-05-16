@@ -85,6 +85,10 @@ Examples:
 
 * 101 channels (000-100) from the `mixed4c` layer: https://i.imgur.com/eBk2IL7.jpg
 
+* 101 channels (100-200) from the `mixed4c` layer: https://i.imgur.com/3mz3lTd.jpg
+
+* 101 channels (400-500) from the `mixed4c` layer: https://i.imgur.com/ofT11IH.jpg
+
 * 101 channels (000-100) from the `mixed3b` layer: https://i.imgur.com/fFrMd44.jpg
 
 The most interesting layers and channels that I have come across, are [listed here](https://github.com/ProGamerGov/Protobuf-Dreamer/wiki/Interesting-Layers-And-Channels).
