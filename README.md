@@ -83,6 +83,8 @@ Examples:
 
 * 101 channels (000-100) from the `mixed4c` layer: https://i.imgur.com/eBk2IL7.jpg
 
+* 101 channels (000-100) from the `mixed3b` layer: https://i.imgur.com/fFrMd44.jpg
+
 The most interesting layers and channels that I have come across, are [listed here](https://github.com/ProGamerGov/Protobuf-Dreamer/wiki/Interesting-Layers-And-Channels).
 
 A list of all the potential things you can find in the layer channels of the inception5h model, can be [found here](https://github.com/ProGamerGov/Protobuf-Dreamer/blob/master/examples/inception5h/imagenet_comp_graph_label_strings.txt). I'm not sure how to add optional label detection so that the content of a channel can be more easily obtained, so feel free to help if you know how!
