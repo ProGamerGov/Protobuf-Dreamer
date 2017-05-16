@@ -25,6 +25,7 @@ parser.add_argument('--iter', default='10', help="The number of iterations", typ
 parser.add_argument('--octaves', default='4', help="The number of octaves.", type=int)
 parser.add_argument('--tile_size', default='512', help="The size of your tiles.", type=int)
 parser.add_argument('--model', default='/home/ubuntu/Protobuf-Dreamer/model/tensorflow_inception_graph.pb', help="Path to your .pb model file.", type=str)
+parser.add_argument('--print_model', help="Print the layers and inputs from the model.", action='store_false')
 parser.parse_args()
 args = parser.parse_args()
 input_img = args.input_image
@@ -35,6 +36,7 @@ iter_value = args.iter
 octave_value = args.octaves
 tile_size = args.tile_size
 model_path = args.model
+print_model = args.print_model
 input_img = spi.imread(input_img, mode="RGB")
 
 model_fn = os.path.join(os.path.dirname(os.path.realpath(__file__)), model_path)
@@ -49,7 +51,9 @@ imagenet_mean = 117.0
 t_preprocessed = tf.expand_dims(t_input-imagenet_mean, 0)
 tf.import_graph_def(graph_def, {'input':t_preprocessed})
 
-# print(graph.get_operations())
+# Optionally print the inputs and layers of the specified graph.
+if not print_model:
+  print(graph.get_operations())
 
 def T(layer):
     '''Helper for getting layer output tensor'''
