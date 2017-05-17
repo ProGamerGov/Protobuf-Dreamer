@@ -97,6 +97,8 @@ The most interesting layers and channels that I have come across, are [listed he
 
 A list of all the potential things you can find in the layer channels of the inception5h model, can be [found here](https://github.com/ProGamerGov/Protobuf-Dreamer/blob/master/examples/inception5h/imagenet_comp_graph_label_strings.txt). According to the label file, there are supposedly 1001 different things in the inception5h model. I'm not sure how to add optional label detection so that the content of a channel can be more easily obtained, so feel free to help if you know how!
 
+Currently you can use a second script for determining what the model thinks the image is. See here for more details: https://github.com/ProGamerGov/Protobuf-Dreamer/wiki/Classification
+
 All the channel examples were rendered at 640x640 resolution, and used this image as the input image: https://i.imgur.com/E0llxPR.png
 
 ### Examples:
