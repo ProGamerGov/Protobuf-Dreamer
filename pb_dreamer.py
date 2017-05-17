@@ -23,6 +23,7 @@ parser.add_argument('--channel', default='139', help="The target channel of your
 parser.add_argument('--layer', default='mixed4d_3x3_bottleneck_pre_relu', help="The name of the target layer.", type=str)
 parser.add_argument('--iter', default='10', help="The number of iterations", type=int)
 parser.add_argument('--octaves', default='4', help="The number of octaves.", type=int)
+parser.add_argument('--step_size', default='1.5', help="The step size.", type=float)
 parser.add_argument('--tile_size', default='512', help="The size of your tiles.", type=int)
 parser.add_argument('--model', default='/home/ubuntu/Protobuf-Dreamer/model/tensorflow_inception_graph.pb', help="Path to your .pb model file.", type=str)
 parser.add_argument('--print_model', help="Print the layers and inputs from the model.", action='store_false')
@@ -34,6 +35,7 @@ channel_value = args.channel
 layer_name = args.layer
 iter_value = args.iter
 octave_value = args.octaves
+step_size = args.step_size
 tile_size = args.tile_size
 model_path = args.model
 print_model = args.print_model
@@ -137,5 +139,5 @@ def render(img, layer='mixed4d_3x3_bottleneck_pre_relu', channel=139, iter_n=10,
     return render_deepdream(t_grad, img0, iter_n, step, octave_n, octave_scale)
 	
 	
-output_img = render(input_img, layer=layer_name, channel=channel_value, iter_n=iter_value, step=1.5, octave_n=octave_value, octave_scale=1.4)
+output_img = render(input_img, layer=layer_name, channel=channel_value, iter_n=iter_value, step=step_size, octave_n=octave_value, octave_scale=1.4)
 imsave(output_name, output_img)
