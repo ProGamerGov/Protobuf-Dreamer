@@ -28,6 +28,7 @@ parser.add_argument('--step_size', default='1.5', help="The step size.", type=fl
 parser.add_argument('--tile_size', default='512', help="The size of your tiles.", type=int)
 parser.add_argument('--model', default='/home/ubuntu/Protobuf-Dreamer/model/tensorflow_inception_graph.pb', help="Path to your .pb model file.", type=str)
 parser.add_argument('--print_model', help="Print the layers and inputs from the model.", action='store_false')
+parser.add_argument('--verbose', help="Print the layers and inputs from the model.", action='store_false')
 parser.parse_args()
 args = parser.parse_args()
 input_img = args.input_image
@@ -41,6 +42,7 @@ step_size = args.step_size
 tile_size = args.tile_size
 model_path = args.model
 print_model = args.print_model
+verbose = args.verbose
 input_img = spi.imread(input_img, mode="RGB")
 
 model_fn = os.path.join(os.path.dirname(os.path.realpath(__file__)), model_path)
@@ -117,6 +119,11 @@ def render_deepdream(t_grad, img0, iter_n=10, step=1.5, octave_n=4, octave_scale
             #g = calc_grad_tiled(img, t_grad)
 	    g = calc_grad_tiled(img, t_grad, tile_size)
             img += g*(step / (np.abs(g).mean()+1e-7))
+	    if not verbose:
+	        print "Iteration Number: %d" % i
+	if not verbose:
+            print "Octave Number: %d" % octave
+
 
     return Image.fromarray(np.uint8(np.clip(img/255.0, 0, 1)*255))
 
