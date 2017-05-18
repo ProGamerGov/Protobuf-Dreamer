@@ -60,11 +60,17 @@ python pb_dreamer.py --input_image input.png --output_image output.png --octaves
 
 * `--iter`: The number of iterations. Ex: `10`.
 
+* `--step_size`: The step size. Ex: `1.5`.
+
 * `--octaves`: The number of octaves. Ex: `4`.
+
+* `--octave_scale`: The octave scale. Ex: `1.4`.
 
 * `--model`: Path to the `.pb` model file. Default is `tensorflow_inception_graph.pb`.
 
 * `--print_model`:  If this flag is present, all the inputs and layers of the model will be printed to the terminal.
+
+* `--verbose`:  If this flag is present, the current octave and iteration will be printed in the terminal.
 
 
 ### Channels: 
