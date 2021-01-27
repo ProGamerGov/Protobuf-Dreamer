@@ -117,12 +117,12 @@ def render_deepdream(t_grad, img0, iter_n=10, step=1.5, octave_n=4, octave_scale
             img = resize(img, hi.shape[:2])+hi
         for i in range(iter_n):
             #g = calc_grad_tiled(img, t_grad)
-	    g = calc_grad_tiled(img, t_grad, tile_size)
+            g = calc_grad_tiled(img, t_grad, tile_size)
             img += g*(step / (np.abs(g).mean()+1e-7))
-	    if not verbose:
-	        print "Iteration Number: %d" % i
-	if not verbose:
-            print "Octave Number: %d" % octave
+            if not verbose:
+                print("Iteration Number: %d" % i)
+        if not verbose:
+            print("Octave Number: %d" % octave)
 
 
     return Image.fromarray(np.uint8(np.clip(img/255.0, 0, 1)*255))
@@ -146,7 +146,7 @@ def render(img, layer='mixed4d_3x3_bottleneck_pre_relu', channel=139, iter_n=10,
         last_channel = channel
     img0 = np.float32(img)
     return render_deepdream(t_grad, img0, iter_n, step, octave_n, octave_scale)
-	
-	
+    
+    
 output_img = render(input_img, layer=layer_name, channel=channel_value, iter_n=iter_value, step=step_size, octave_n=octave_value, octave_scale=octave_scale_value)
 imsave(output_name, output_img)
