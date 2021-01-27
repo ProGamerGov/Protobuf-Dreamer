@@ -117,12 +117,12 @@ def render_deepdream(t_grad, img0, iter_n=10, step=1.5, octave_n=4, octave_scale
             img = resize(img, hi.shape[:2])+hi
         for i in range(iter_n):
             #g = calc_grad_tiled(img, t_grad)
-        g = calc_grad_tiled(img, t_grad, tile_size)
+            g = calc_grad_tiled(img, t_grad, tile_size)
             img += g*(step / (np.abs(g).mean()+1e-7))
+            if not verbose:
+                print("Iteration Number: %d" % i)
         if not verbose:
-            print "Iteration Number: %d" % i
-    if not verbose:
-            print "Octave Number: %d" % octave
+            print("Octave Number: %d" % octave)
 
 
     return Image.fromarray(np.uint8(np.clip(img/255.0, 0, 1)*255))
